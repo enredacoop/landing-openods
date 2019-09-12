@@ -10,6 +10,12 @@
 
     $(document).on('ready', function() {
 
+        /* ==================================================
+            # Includes init
+            Para incluir las partes de HTML que se encuentran en archivos separados 
+         ===============================================*/
+         includeHTML();
+
 
         /* ==================================================
             # Wow Init

@@ -1,0 +1,29 @@
+<div id="alert-ko" class="alert alert-danger alert-dismissible d-none" role="alert">
+	No se ha podido enviar el formulario de contacto en estos momentos. Por favor, inténtelo más tarde. Disculpe las molestias.
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+</div>
+<div id="alert-ok" class="alert alert-success alert-dismissible d-none" role="alert">
+	Se ha enviado el formulario de contacto correctamente. Le responderemos lo antes posible. Gracias.
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+</div>
+<form id="form-leanfinance" action="" onsubmit="sendEmail(); return false;">
+    <div class="form-group">
+        <input type="text" id="form-name" placeholder="Escribe tu nombre" class="form-control c-square c-theme input-lg" required>
+    </div>
+    <div class="form-group">
+        <input type="email" id="form-email" placeholder="Escribe tu email" class="form-control c-square c-theme input-lg" required>
+    </div>
+    <div class="form-group">
+        <input type="text" id="form-phone" placeholder="Escribe tu teléfono" class="form-control c-square c-theme input-lg" required>
+    </div>
+    <div class="form-group">
+        <textarea rows="8" id="form-message" placeholder="Motivo de consulta..." class="form-control c-theme c-square input-lg" required></textarea>
+    </div>
+    <div class="form-group">
+        <div class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input" id="form-download-check" required>
+			<label class="custom-control-label" for="form-download-check">Confirmo que acepto y he leído el <a href="#contacto" data-toggle="modal" data-target="#aviso_legal" target="_blank">aviso legal</a>.</label>
+		</div>
+	</div>
+    <button type="submit" class="btn btn-md c-btn-square c-btn-border-2x c-btn-regular c-btn-uppercase c-btn-bold">Enviar</button> 
+</form>
