@@ -57,6 +57,14 @@
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/main.js"></script>
 
+        <!-- Scripts EmailJS -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+          emailjs.init("user_9dJmwKVkjmQlY1WxCc0iy");
+        })();
+    </script>
+
 </head>
 
 <body>
@@ -119,7 +127,7 @@
                             <a class="smooth-menu" href="#caracteristicas">Características</a>
                         </li>
                         <li>
-                            <a class="smooth-menu" href="#funciona">Como Funciona</a>
+                            <a class="smooth-menu" href="#funciona">Cómo Funciona</a>
                         </li>
                         <li>
                             <a class="smooth-menu" href="#contacto">Contacto</a>
@@ -137,34 +145,8 @@
     </header>
     <!-- End Header -->
 
-    <!-- Start Banner 
-    ============================================= -->
-    <div class="banner-area auto-height content-less shadow text-light text-center theme-hard bg-fixed" style="background-image: url(assets/img/header-map.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="content">
-                    <div class="col-md-10 col-md-offset-1">
-                        <!-- <h3>We're Boxass</h3> -->
-                        <h1>Un sistema integral para acelerar la Agenda 2030</h1>
-                        <!-- <a class="btn-animation border light popup-youtube" href="https://www.youtube.com/watch?v=owhuBrGIOsE">
-                            <i class="fa fa-play"></i> Watch Video
-                        </a> -->
-                    </div>
-                    <!-- <div class="col-md-8 col-md-offset-2">
-                        <div class="banner banner-carousel owl-carousel owl-theme">
-                            <img alt="Thumb" src="assets/img/800x600.png">
-                            <img alt="Thumb" src="assets/img/800x600.png">
-                            <img alt="Thumb" src="assets/img/800x600.png">
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-        <div class="wavesshape highlight shape">
-            <img src="assets/img/waves-shape-2.svg" alt="Shape">
-        </div>
-    </div>
-    <!-- End Banner -->
+    <!-- Banner -->
+    <div w3-include-html="include/banner.html" include-var="Un sistema integral para acelerar la Agenda 2030"></div>
 
     <!-- Start About 
     ============================================= -->
@@ -175,7 +157,7 @@
                     <h2>Gestión integral de los procesos y la visualización de resultados de la estrategia ODS de tu entidad</h2>
                     <p>
                         El sistema OpenODS es la única solución tecnológica común que da servicio, a través de una misma plataforma en la nube, 
-                        a Administraciones Públicas, empresas, universidades y organizaciones de la sociedad civil.
+                        a administraciones públicas, empresas, universidades y organizaciones de la sociedad civil.
                     </p>
                     <div class="fun-facts">
                         <h3>Gestión centralizada e inteligente</h3>
@@ -236,11 +218,11 @@
                         <div class="item">
                             <div class="info">
                                 <i class="flaticon-project"></i>
+                                <h4>Uso Básico</h4>
                                 <p>
                                     Los 17 Objetivos de Desarrollo Sostenible son universales y constituyen el horizonte hacia el 
                                     que caminan todas las entidades del mundo.
                                 </p>
-                                <h4>Uso Básico</h4>
                             </div>
                         </div>
                     </div>
@@ -250,11 +232,11 @@
                         <div class="item">
                             <div class="info">
                                 <i class="flaticon-concept"></i>
+                                <h4>Uso Avanzado</h4>
                                 <p>
                                     Incorpora las diferentes necesidades específicas de cada territorio y organización. Facilita 
                                     el establecimiento de prioridades como principio fundamental para una buena gestión de los ODS.
                                 </p>
-                                <h4>Uso Avanzado</h4>
                             </div>
                         </div>
                     </div>
@@ -264,12 +246,12 @@
                         <div class="item">
                             <div class="info">
                                 <i class="flaticon-talk"></i>
+                                <h4>Asistente virtual</h4>
                                 <p>
                                     Este asistente te guiará, paso a paso y de forma interactiva, durante todo el proceso de localización, 
                                     para optimizar la toma de decisiones y la implementación de la Agenda, mejorando sustancialmente el 
                                     alineamiento de tu entidad con los Objetivos de Desarrollo Sostenible.
                                 </p>
-                                <h4>Asistente virtual</h4>
                             </div>
                         </div>
                     </div>
@@ -279,11 +261,11 @@
                         <div class="item">
                             <div class="info">
                                 <i class="flaticon-updated"></i>
+                                <h4>Acciones estratégicas</h4>
                                 <p>
                                     Permiten alinear el plan estratégico de tu entidad con una hoja de ruta propia para contribuir a 
                                     alcanzar los ODS. Las acciones estratégicas pueden apuntar a metas globales o a metas localizadas.
                                 </p>
-                                <h4>Acciones estratégicas</h4>
                             </div>
                         </div>
                     </div>
@@ -293,11 +275,11 @@
                         <div class="item">
                             <div class="info">
                                 <i class="flaticon-insurance"></i>
+                                <h4>Implementaciones</h4>
                                 <p>
-                                    Basadas en la filosofía SMART. Pueden consistir tanto en el desarrollo una acción estratégica, 
+                                    Basadas en la filosofía SMART. Pueden consistir tanto en el desarrollo de una acción estratégica, 
                                     como en iniciativas independientes para la consecución de una o varias metas.
                                 </p>
-                                <h4>Implementaciones</h4>
                             </div>
                         </div>
                     </div>
@@ -307,11 +289,11 @@
                         <div class="item">
                             <div class="info">
                                 <i class="flaticon-help"></i>
+                                <h4>Alianzas</h4>
                                 <p>
                                     Se establecen para desarrollar acciones estratégicas y/o implementaciones conjuntas. 
                                     Pueden ser tanto intersectoriales como interterritoriales.
                                 </p>
-                                <h4>Alianzas</h4>
                             </div>
                         </div>
                     </div>
@@ -329,7 +311,7 @@
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-lg-offset-2 col-md-offset-2">
                     <div class="site-heading text-center">
-                        <h2>Como Funciona</h2>
+                        <h2>Cómo Funciona</h2>
                     </div>
                 </div>
             </div>
@@ -805,52 +787,9 @@
                     </div>
                     <!-- End Thumb -->
                     
-                    <!-- Contact Form -->
-                    <div class="col-md-7 col-md-offset-1 contact-form">
-                        <form action="mailto:info@openods.es" method="GET" class="contact-form">
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="form-group">
-                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <div class="form-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Tell Us About Project *"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="row">
-                                    <button type="submit" name="submit" id="submit">
-                                        Enviar <i class="fa fa-paper-plane"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- Alert Message -->
-                            <div class="col-md-12 alert-notification">
-                                <div id="message" class="alert-msg"></div>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- End Contact Form -->
+                    <!-- Contact form -->
+                    <div class="col-md-7 col-md-offset-1 contact-form" w3-include-html="include/contact_form.html"></div>
+
                 </div>
 
                 <!-- Google Maps 

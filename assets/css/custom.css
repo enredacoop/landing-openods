@@ -1,0 +1,55 @@
+
+/* Basics */
+.hidden {
+	display: none;
+	opacity: 0;
+}
+.show {
+	display: initial;
+	opacity: 1;
+}
+
+
+/* Form */
+.custom-control-label a,
+.download-link {
+  color: var(--primary);
+}
+.custom-control-label a:hover,
+.download-link:hover {
+  color: var(--primary-hover);
+}
+.custom-control-input[type=checkbox] {
+	vertical-align: middle;
+  margin-bottom: 5px;
+}
+textarea.form-control {
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+/* Alerts */
+.alert > button[data-dismiss=alert] {
+  position: absolute;
+  display: block;
+  border: none;
+  min-width: 10px !important;
+  padding: 10px;
+  right: 15px;
+}
+
+
+/* Header */
+.banner-area.auto-height.content-less {
+  padding-top: 195px;
+  padding-bottom: 95px;
+}
+
+/* Section Service */
+.services-area .services-items .item {
+	height: 100%;
+}
+.services-area .services-items .item h4 {
+	padding-bottom: 20px;
+}
