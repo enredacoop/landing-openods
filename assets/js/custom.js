@@ -53,9 +53,9 @@ function sendEmail() {
   }
 
   var service_id = "default_service";
-  var template_id = "template_vZUSGhQh";
+  var template_id = "template_DEZkozg6";
 
-  emailjs.send(service_id, template_id, template_params, "user_9dJmwKVkjmQlY1WxCc0iy")
+  emailjs.send(service_id, template_id, template_params, "user_aOLHkOHvrvk6eljIoHFwg")
     .then(function(response) {
       console.log('SUCCESS!', response.status, response.text);
       $("#alert-ok").removeClass("hidden");
