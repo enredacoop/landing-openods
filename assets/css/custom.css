@@ -2,7 +2,7 @@
 
 	Author: ENREDA
 	Author URI: https://enreda.coop
-	Version: 0.3
+	Version: 0.4
 
 -----------------------------------------------------------------------------------*/
 /* ----------------------------------------------------------------
@@ -16,6 +16,7 @@
 		04 Section Service
 		05 Icons
 		06 Modal
+		07 Social networks
  
 ---------------------------------------------------------------- */
 /* ----------------------------------------------------------------
@@ -104,3 +105,54 @@ textarea.form-control {
 	#blog-modal .modal-body > figure {
 		margin-bottom: 30px;
 	}
+		#blog-modal .modal-body > figure > img {
+      width: 100%;
+    }
+
+/* ----------------------------------------------------------------
+  [ 07 Social networks ]
+-----------------------------------------------------------------*/
+.block-networks {
+  float: left;
+}
+  .block-networks .fa-stack {
+    font-size: 17px;
+  }
+
+.btn-share.facebook {
+  color: #3b5998;
+}
+  .btn-share.facebook:hover {
+    color: #2d4373;
+  }
+.btn-share.twitter {
+  color: #55acee;
+}
+  .btn-share.twitter:hover {
+    color: #2795e9;
+  }
+.btn-share.whatsapp {
+  color: #25D366;
+}
+  .btn-share.whatsapp:hover {
+    color: #1da851;
+  }
+.btn-share.telegram {
+  color: #54A9EB;
+}
+  .btn-share.telegram:hover {
+    color: #4B97D1;
+  }
+.btn-share.linkedin {
+  color: #0077b5;
+}
+  .btn-share.linkedin:hover {
+    color: #046293;
+  }
+
+/* ----------------------------------------------------------------
+  [ 08 Blog ]
+-----------------------------------------------------------------*/
+.single-item {
+	cursor: pointer;
+}

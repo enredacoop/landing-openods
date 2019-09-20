@@ -2,7 +2,7 @@
 
   Author: ENREDA
   Author URI: https://enreda.coop
-  Version: 0.3
+  Version: 0.4
 
 -----------------------------------------------------------------------------------*/
 
@@ -203,6 +203,25 @@ function showModalContent(){
     $("#modal-content").html(content);
     $("#modal-title").html(title);
 
+    setLinksSocialNetworks( title );
+
     $('#blog-modal').modal('show');
   }); 
+}
+
+/* Función para cambiar los enlaces de los iconos de compartir en redes sociales */
+function setLinksSocialNetworks( title ) {
+  var url_blog = "https://openods.es/ultimas_noticias/";
+
+  var url_facebook = "https://facebook.com/sharer/sharer.php?u=" + url_blog;
+  var url_twitter = "https://twitter.com/intent/tweet/?text=" + title + "&amp;url=" + url_blog;
+  var url_linkedin = "https://www.linkedin.com/sharing/share-offsite/?url=" + url_blog;
+  var url_whatsapp = "whatsapp://send?text=" + title + "%20" + url_blog;
+  var url_telegram = "https://telegram.me/share/url?text=" + title + "&url=" + url_blog;
+
+  $("#bs-facebook").attr("href", url_facebook );
+  $("#bs-twitter").attr("href", url_twitter );
+  $("#bs-linkedin").attr("href", url_linkedin );
+  $("#bs-whatsapp").attr("href", url_whatsapp );
+  $("#bs-telegram").attr("href", url_telegram );
 }
