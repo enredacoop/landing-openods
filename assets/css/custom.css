@@ -89,11 +89,17 @@ textarea.form-control {
 /* ----------------------------------------------------------------
 	[ 05 Icons ]
 -----------------------------------------------------------------*/
-.video-play-button {
+.video-play-button.icon-view {
 	padding: 0px;
 }
-	.video-play-button i {
+	.video-play-button.icon-view i {
     left: -2px;
+	}
+.video-play-button.icon-play {
+	padding: 0px;
+}
+	.video-play-button.icon-play i {
+    left: 6px;
 	}
 
 /* ----------------------------------------------------------------
@@ -166,3 +172,13 @@ textarea.form-control {
 .video-area .item-box .info h2 {
 	text-transform: initial;
 }
+.video-area .video > video {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+	max-width: 960px;
+	border-radius: 13px;
+}
+	.video-area .video > video:focus {
+		outline: none;
+	}
