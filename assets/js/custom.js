@@ -137,7 +137,7 @@ function getBlogContent(){
         var descriptionEnd = item.description.substring(tagIndex).indexOf('</p>');
         var description = item.description.substring(descriptionStart, descriptionEnd).substring(3);
 
-        output = `<!- - Single Item - ->
+        output += `<!- - Single Item - ->
                   <div class="col-md-4 single-item" item-blog="` + k + `">
                       <div class="item">
                           <div class="thumb">

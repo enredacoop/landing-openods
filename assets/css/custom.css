@@ -165,6 +165,13 @@ textarea.form-control {
 .single-item {
 	cursor: pointer;
 }
+.single-item .thumb {
+	height: 240px;
+}
+	.single-item .thumb img {
+		height: 240px;
+		object-fit: cover;
+	}
 
 /* ----------------------------------------------------------------
   [ 09 Section video ]
