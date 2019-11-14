@@ -2,9 +2,13 @@
 
   Author: ENREDA
   Author URI: https://enreda.coop
-  Version: 0.4
+  Version: 1.3
 
 -----------------------------------------------------------------------------------*/
+
+/* Variables configuración */
+var url_base = window.location.href.includes("localhost") || window.location.href.includes("127.0.0.1") ? "/landing-openods/" : "/";
+
 
 $(document).ready(function(){
 
@@ -42,6 +46,34 @@ function includeHTML() {
       xhttp.send();
       /*exit the function:*/
       return;
+    }
+  }
+
+  /* 
+  | Aunque deberíamos ejecutar la función cuando el documento está listo,
+  | la lanzamos aquí para aplicarlo en los includes. Si detectamos algún fallo o retardo
+  | meterla en la función inicial.
+  */
+  addBaseURL();
+}
+
+/* Función para añadir a los enlaces el url_base */
+function addBaseURL() {
+  var z, i, elmnt;
+  z = document.getElementsByTagName('*');
+  for( i=0; i<z.length; i++) {
+    elmnt = z[i];
+    data_conf = elmnt.getAttribute("data_conf");
+
+    if( data_conf=="base_url" ) {
+
+      if(elmnt.href){
+        elmnt.href = url_base + $(elmnt).attr("href");
+      }else{
+        var new_src = url_base + $(elmnt).attr("src");
+        $(elmnt).attr("src", new_src);
+      }
+      elmnt.removeAttribute("data_conf");
     }
   }
 }
