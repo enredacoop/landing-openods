@@ -54,6 +54,25 @@
 	text-transform: initial !important;
 }
 
+.logo-alianza {
+	max-height: 200px;
+  width: 100%;
+  max-width: 200px;
+  object-fit: contain;
+}
+
+/* ----------------------------------------------------------------
+	[ 00 Basics - Margins ]
+-----------------------------------------------------------------*/
+.mx-2 {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.mx-3 {
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
 
 /* ----------------------------------------------------------------
 	[ 01 Forms ]
